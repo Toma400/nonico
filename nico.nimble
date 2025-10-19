@@ -11,7 +11,7 @@ requires "nim >= 1.4.0"
 requires "sdl2_nim >= 2.0.14.2"
 requires "gifenc >= 0.1.0"
 requires "nimPNG >= 0.3.1"
-requires "zippy >= 0.5.9"
+requires "zippy >= 0.10.16"
 
 skipDirs = @["examples","tests","android","tools"]
 installDirs = @["exampleApp"]

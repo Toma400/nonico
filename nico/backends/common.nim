@@ -13,7 +13,7 @@ export keycodes.Scancode
 
 # Constants
 
-const maxPaletteSize* = 256
+const maxPaletteSize* = 4096
 const nAudioChannels* = 16
 const deadzone* = int16.high div 2
 var gifScale* = 2

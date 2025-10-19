@@ -1,3 +1,14 @@
+# NoNICO Fork
+NoNICO fork was meant to update NICO framework with some changes that are result of either
+NICO being non-maintained framework, or by having its specific characterisation that
+was getting in the way of [Of Lands](https://github.com/Toma400/OfLands) development.
+
+Changes are as follows:
+- setting palette limit from 256 to ...
+- updating `zippy` dependency, so it doesn't rely on outdated version (forces 0.10.16)
+
+Original readme below:
+
 # NICO Game Framework
 [![test](https://github.com/ftsf/nico/workflows/test/badge.svg)](https://github.com/ftsf/nico/actions)
 
