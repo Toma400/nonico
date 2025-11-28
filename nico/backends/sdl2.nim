@@ -23,6 +23,7 @@ when defined(gif):
   import gifenc
 
 import sdl2_nim/sdl
+import sdl2_nim/sdl_image
 
 import nico/ringbuffer
 import nico/stb_vorbis

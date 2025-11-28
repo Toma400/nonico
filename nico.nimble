@@ -1,6 +1,7 @@
 # Package
+# NOTE: NoNico's versioning is meant to be useful for following small changes, hence it uses 0.5.x versioning
 
-version       = "0.4.10"
+version       = "0.5.0"
 author        = "Jez 'Impbox' Kabanov"
 description   = "Nico Game Engine"
 license       = "MIT"

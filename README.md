@@ -3,11 +3,15 @@ NoNICO fork was meant to update NICO framework with some changes that are result
 NICO being non-maintained framework, or by having its specific characterisation that
 was getting in the way of [Of Lands](https://github.com/Toma400/OfLands) development.
 
-Changes are as follows:
-- setting palette limit from 256 to much higher
-- adds `setWindowIcon` proc, allowing game to have icon provided
-- updating `zippy` dependency, so it doesn't rely on outdated version (forces 0.10.16)
+Changes are as follows (with versions introducing feature):
 
+| Version | Feature                                                                              |
+|:-------:|--------------------------------------------------------------------------------------|
+| `0.4.x` | setting palette limit from 256 to 4096                                               |
+| `0.4.x` | updating `zippy` dependency, so it doesn't rely on outdated version (forces 0.10.16) |
+| `0.5.0` | adds `setWindowIcon` proc, allowing game to have icon provided                       |
+
+---
 Original readme below:
 
 # NICO Game Framework
