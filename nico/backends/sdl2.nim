@@ -174,6 +174,7 @@ else:
   var hwCanvas: sdl.Texture
 
 var swCanvas32: sdl.Surface
+var winIcon:    sdl.Surface
 var srcRect: sdl.Rect
 var dstRect: sdl.Rect
 
@@ -2145,6 +2146,17 @@ proc setLinearFilter*(on: bool) =
 
 proc hasWindow*(): bool =
   return window != nil
+
+proc setWindowIcon* (img_path: string) =
+  if winIcon != nil:
+    sdl.freeSurface(winIcon)
+
+  winIcon = load(img_path.cstring)
+  if winIcon == nil:
+    debug "error creating winIcon"
+    raise newException(Exception, "error creating RGB surface")
+
+  sdl.setWindowIcon(window, winIcon)
 
 proc setVSync*(on: bool) =
   vsyncEnabled = on

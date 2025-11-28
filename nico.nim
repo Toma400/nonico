@@ -3037,6 +3037,9 @@ proc hasWindow*(): bool =
   ## returns true if window has been created
   return backend.hasWindow()
 
+proc setWindowIcon* (img: string) =
+  backend.setWindowIcon(img)
+
 export setVSync
 export getVSync
 

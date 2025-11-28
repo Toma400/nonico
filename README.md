@@ -4,7 +4,8 @@ NICO being non-maintained framework, or by having its specific characterisation 
 was getting in the way of [Of Lands](https://github.com/Toma400/OfLands) development.
 
 Changes are as follows:
-- setting palette limit from 256 to ...
+- setting palette limit from 256 to much higher
+- adds `setWindowIcon` proc, allowing game to have icon provided
 - updating `zippy` dependency, so it doesn't rely on outdated version (forces 0.10.16)
 
 Original readme below:
