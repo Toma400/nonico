@@ -23,7 +23,7 @@ when defined(gif):
   import gifenc
 
 import sdl2_nim/sdl
-import sdl2_nim/sdl_image
+from   sdl2_nim/sdl_image import load
 
 import nico/ringbuffer
 import nico/stb_vorbis
@@ -2152,7 +2152,7 @@ proc setWindowIcon* (img_path: string) =
   if winIcon != nil:
     sdl.freeSurface(winIcon)
 
-  winIcon = load(img_path.cstring)
+  winIcon = sdl_image.load(img_path.cstring)
   if winIcon == nil:
     debug "error creating winIcon"
     raise newException(Exception, "error creating RGB surface")
